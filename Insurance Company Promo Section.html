@@ -1,0 +1,159 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 222.2 84% 4.9%;
+--card: 0 0% 100%;
+--card-foreground: 222.2 84% 4.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 222.2 84% 4.9%;
+--primary: 221.2 83.2% 53.3%;
+--primary-foreground: 210 40% 98%;
+--secondary: 210 40% 96.1%;
+--secondary-foreground: 222.2 47.4% 11.2%;
+--muted: 210 40% 96.1%;
+--muted-foreground: 215.4 16.3% 46.9%;
+--accent: 210 40% 96.1%;
+--accent-foreground: 222.2 47.4% 11.2%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 210 40% 98%;
+--border: 214.3 31.8% 91.4%;
+--input: 214.3 31.8% 91.4%;
+--ring: 221.2 83.2% 53.3%;
+				}
+				.dark {
+					--background: 222.2 84% 4.9%;
+--foreground: 210 40% 98%;
+--card: 222.2 84% 4.9%;
+--card-foreground: 210 40% 98%;
+--popover: 222.2 84% 4.9%;
+--popover-foreground: 210 40% 98%;
+--primary: 217.2 91.2% 59.8%;
+--primary-foreground: 222.2 47.4% 11.2%;
+--secondary: 217.2 32.6% 17.5%;
+--secondary-foreground: 210 40% 98%;
+--muted: 217.2 32.6% 17.5%;
+--muted-foreground: 215 20.2% 65.1%;
+--accent: 217.2 32.6% 17.5%;
+--accent-foreground: 210 40% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 210 40% 98%;
+--border: 217.2 32.6% 17.5%;
+--input: 217.2 32.6% 17.5%;
+--ring: 224.3 76.3% 48%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="flex flex-col lg:flex-row items-center justify-between p-8 bg-[var(--background)] text-[var(--foreground)]">
+  
+  <div class="flex flex-col items-center text-center lg:w-1/2">
+    <h1 class="text-4xl font-bold text-black">DODGE <span class="text-red-600">HIGH</span> PREMIUMS</h1>
+    <img src="https://placehold.co/300x300?text=Parrot" alt="African Grey Parrot" class="my-4">
+    <p class="text-xl text-red-600">Contact Us</p>
+    <p class="text-sm text-zinc-600">for <span class="text-red-600">lower premiums</span> and quicker payouts</p>
+  </div>
+  
+  <div class="lg:w-1/2 lg:pl-8 mt-8 lg:mt-0">
+    <h2 class="text-red-600 text-sm font-bold">ABOUT OUR COMPANY</h2>
+    <h3 class="text-4xl font-bold mt-2">Why Should You Choose Us?</h3>
+    <p class="mt-4 text-zinc-600">
+      African Grey Insurance Limited is a General Insurance Company wholly owned by Zambian domiciled interests and duly licensed by the Pensions and Insurance Authority (PIA) to transact all classes of General Insurance Business in Zambia.
+    </p>
+    <div class="mt-6">
+      <div class="flex space-x-2">
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg mission-btn">OUR MISSION</button>
+        <button class="bg-zinc-800 text-white px-4 py-2 rounded-lg vision-btn">OUR VISION</button>
+        <button class="bg-red-600 text-white px-4 py-2 rounded-lg goal-btn">OUR GOAL</button>
+      </div>
+      <p class="mt-4 text-white bg-red-600 p-4 rounded-lg mission-text hidden">
+        To offer valuable, inventive tailor-made insurance solutions to our customers.
+      </p>
+      <p class="mt-4 text-white bg-red-600 p-4 rounded-lg vision-text hidden">
+        Display Vision Text Here
+      </p>
+      <p class="mt-4 text-white bg-red-600 p-4 rounded-lg goal-text hidden">
+        Display Goal Text Here
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+  const missionBtn = document.querySelector('.mission-btn');
+  const visionBtn = document.querySelector('.vision-btn');
+  const goalBtn = document.querySelector('.goal-btn');
+  const missionText = document.querySelector('.mission-text');
+  const visionText = document.querySelector('.vision-text');
+  const goalText = document.querySelector('.goal-text');
+  missionBtn.addEventListener('click', () => {
+    missionText.classList.toggle('hidden');
+    visionText.classList.add('hidden');
+    goalText.classList.add('hidden');
+  });
+  visionBtn.addEventListener('click', () => {
+    missionText.classList.add('hidden');
+    visionText.classList.toggle('hidden');
+    goalText.classList.add('hidden');
+  });
+  goalBtn.addEventListener('click', () => {
+    missionText.classList.add('hidden');
+    visionText.classList.add('hidden');
+    goalText.classList.toggle('hidden');
+  });
+</script>
+
+
+  </body>
+</html>
